@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="utils.css">
+   <script src="utils.js"></script>
+   <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+   <script src="mask.js"></script>
+  
+   
+    <title>Ahgora Utilitários</title>
+</head>
+<body>
+  <div class="container">
+      <h2>Ahgora Utilitários</h2>
+      <p>Primeira aba referente a calculadora de horas, adição e subtração. </p>
+      <p>Segunda aba referente a calculadora de horas noturnas. <a href="https://seusucesso.ahgora.com.br/kb/pt-br/article/26329/o-que-sao-horas-noturnas?ticketId=&q=" target="blank">Clique aqui para saber mais</a></p>
+      <p>Terceira aba para converter horas Sexagesimais em Centesimais.</p>
+
+      <ul class="nav nav-justified nav-tabs">
+          <li class="nav-item "><a data-toggle="tab"  class="nav-link small text-uppercase active" href="#calculadora">Calculadora</a></li>
+          <li class="nav-item"><a data-toggle="tab"  class="nav-link small text-uppercase "  href="#noturnas">Calculadora de Horas Noturnas</a></li>
+          <li class="nav-item"><a data-toggle="tab" class="nav-link small text-uppercase" href="#conversor">Conversor de horas</a></li>
+
+      </ul>
+
+      <div class="tab-content">
+          <div id="calculadora" class="tab-pane fade active show">    <!---Adição e subtração de horas-->
+              <h3>Calculadora de Horas.</h3>
+              
+
+              <div class="calculadora">
+             <div class="ligne_input">
+              <input id="hour1" type="text" maxlength="4" class="input_carre">
+              <label for="hours">Horas</label>
+             
+              <input id="minute1" type="text" maxlength="4" class="input_carre">
+              <label for="mins">Minutos</label>
+            </div>
+
+            <div class="ligne_input">
+              <input id="hour2" type="text" maxlength="4" class="input_carre">
+              <label for="hours">Horas</label>
+             
+              <input  id="minute2" type="text" maxlength="4" class="input_carre">
+              <label for="mins">Minutos</label>
+            </div>
+          
+
+          <div class="ligne_input">
+
+            <span id="sum"class="bouton_moyen" >Adição</span>
+            <span id="reset" class="bouton_moyen">Reset</span>
+            <span id="decrease" class="bouton_moyen">Subtração</span>
+
+
+          </div>
+          <hr>
+
+          <div class="ligne_input">
+              <input id="resultHour" type="text" readonly maxlength="2" class="input_carre_resultado">
+              <label for="hours">Horas</label>
+             
+              <input id="resultMinute" type="text"  readonly maxlength="2" class="input_carre_resultado">
+              <label for="mins">Minutos</label>
+            </div>
+
+            <div class="ligne_input">
+            <span id="save" class="bouton_moyen">Salvar</span>
+            <input id="auto" type="checkbox">
+            <label for="auto"class="results">Salvar Auto</label>
+          </div>
+        </div> <!-- Fim do quadrado-->
+
+      </div>
+
+
+          <div id="noturnas" class="tab-pane " a>   <!-- Calculadora de Horas Noturnas-->
+
+            <h3>Calculadora de Horas Noturnas</h3>
+            <div class="ligne_input">
+
+                <div class="text-center">
+                    <label>Horas(Sexagesimal)</label>
+                    <input id="horasSexagesimal" type="text"  class="input_carre">
+                    <label>Minutos(Sexagesimal)</label>
+                    <input id="minutosSexagesimal" type="text"  class="input_carre"> <br>                        
+               
+                   <textarea  name="resultHours" id="resultHours" cols="60" rows="7" readonly></textarea> <br>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <button id="calcNight">Calcular Adicional noturno </button>
+                           
+                         </div>
+      
+                       
+
+
+                    </div>
+                 
+                
+
+                  
+
+
+
+            </div>
+         
+          </div>
+            
+
+          
+
+
+
+          </div>
+
+          <div id="conversor" class="tab-pane fade row">   <!-- Converter horas -->
+            
+            <h3>Conversor de Horas. </h3>  
+              <div class="row ">
+              <div class= "col-sm-6 inline ">
+               
+              
+
+             <label for="sexagesimal">Valor em Sexagesimal </label> 
+            <input  id="sexagesimal" maxlength="5" class="sexagesimal" data-toggle="tooltip" class="tool_tip" title="O Campo deve conter 4 Digitos, exemplo 01:15"  data-placement="bottom" type="text" placeholder="hh:mm">  
+              
+              </div>
+
+             
+              <div class= "col-sm-6 inline"> 
+                <label for="centesimal" class="inline ">Valor em Centesimal</label>
+                <input id="centesimal" class="centesimal" type="text"  maxlength="5" placeholder="00.00"> 
+
+              </div>
+                          
+            </div> 
+                  
+          </div>
+      </div>
+   
+  </div>
+
+    
+
+
+
+  
+</body>
+</html>

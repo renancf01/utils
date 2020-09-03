@@ -1,0 +1,115 @@
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #4682B4;
+    color: white;
+  
+}
+
+
+@media (max-width:575px) {
+
+    .inline{
+        display: inline;
+
+        margin-top: 20px;
+        
+    }
+
+    #conversor {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #convert {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:375px) {
+
+    .inline {
+        display: block;
+    }
+   
+}
+
+
+@media screen and (max-width:375px) {
+    #sexagesimal {
+        display: block;
+    }
+
+}
+
+.input_carre {
+    border: 1px #042e5d solid;
+    width: 82px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.ligne_input {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.bouton_moyen {
+    color: #fff;
+    letter-spacing: 3pt;
+    font-size: 15px;
+    padding: 10px;   
+    background: rgb(7, 86, 151);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border: 1px #fcfcfc solid;
+    border-radius: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+   
+}
+
+.calculadora {
+    text-align: center;
+    height: auto;
+    width: 600px;
+    left: 60%;
+     margin: auto;
+    border:  1px solid black;
+    
+}
+
+hr {
+    border-width: 2px;
+    display: block;
+    border-style: inset;
+
+}
+
+.input_carre_resultado {
+    border: 1px #042e5d solid;
+    width: 82px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #042e5d;
+    color: white;
+    
+
+}
+
+.ligne_input input {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.results {
+    font-size: 20px;
+    color: black;
+}
+
+.calculadora {
+   background-color:  #f1f1f1;
+   font-family: 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+font-size: 13px;
+color: #757575;
+}
+
+
